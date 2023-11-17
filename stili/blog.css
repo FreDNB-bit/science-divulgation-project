@@ -1,0 +1,322 @@
+/* blog header */
+.blog-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(../img/bg-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 0px 10px -3px #357197;
+}
+
+.blog-header h1 {
+    padding-top: 100px;
+}
+
+.blog-header p {
+    padding: 0;
+}
+
+/* END! blog header */
+
+.blog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-image: url(../img/blog-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-wrapper p {
+    font-size: 1.1rem;
+    padding: 20px 30px;
+}
+
+/* blog menu aside */
+.menu-container {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+}
+
+.menu-container a:hover {
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(227, 248, 255);
+    background: rgb(49, 64, 78);
+    transition: .1s;
+}
+
+.search {
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.search,
+.blog-menu,
+.recent,
+.archive,
+.subscribing {
+    margin-top: 30px;
+}
+
+.blog-menu ol li,
+.recent ol li,
+.archive ol li {
+    padding: 10px 25px;
+    margin: 5px 0px;
+}
+
+.sub-btn {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* END! blog menu aside */
+
+/* blog content */
+.blog-container {
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 60px;
+    gap: 30px;
+}
+
+.blog-article {
+    width: 350px;
+    height: auto;
+    padding: 30px 0px;
+    border-radius: 20px 10px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(218deg, rgba(255, 255, 255, 1) 0%, rgba(244, 251, 251, 1) 47%, rgba(220, 237, 237, 1) 100%);
+    border: 0.2px solid rgb(220, 232, 232);
+    position: relative;
+    transition: transform .5s ease;
+}
+
+.blog-article:hover {
+    transform: scale(1.05);
+}
+
+.blog-article h4 {
+    text-align: center;
+}
+
+.blog-article .btn {
+    font-size: 1.1rem;
+}
+
+.blog-article p {
+    font-size: 1rem;
+}
+
+.blog-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.blog-box img {
+    width: 15px;
+}
+
+.blog-box p {
+    font-size: 0.9rem;
+    padding: 5px 3px;
+    margin-left: 10px;
+}
+
+.blog-article:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-145deg, #508a93 -35%, #8de1ed 57%);
+    transform: translate3d(-6px, 1px, 60) scale(1.06);
+    filter: blur(15px);
+    opacity: var(0.9);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.blog-article::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.blog-article-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.b1 {
+    background-image: url(../img/blog-articles-img/giornata_mondiale_donne_scienza.jpg);
+}
+
+.b3 {
+    background-image: url(../img/blog-articles-img/inquinamento-luminoso-europa.jpg);
+}
+
+.b5 {
+    background-image: url(../img/blog-articles-img/astronomia.jpg);
+}
+
+.b6 {
+    background-image: url(../img/blog-articles-img/tecnologie.jpg);
+}
+
+.mostra-altro {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: none;
+    margin: auto;
+}
+
+/* END! blog content */
+
+
+@media screen and (max-width: 1024px) {
+    .menu-container {
+        width: 35%;
+    }
+
+    .blog-header h1 {
+        letter-spacing: 1.2rem;
+    }
+
+    .blog-container {
+        width: 65%;
+    }
+
+    .blog-article {
+        width: 400px;
+    }
+
+    .blog-article:nth-child(5),
+    .blog-article:nth-child(6) {
+        display: none;
+    }
+
+    .mostra-altro {
+        display: block;
+        color: inherit;
+        text-align: center;
+    }
+
+    .recent ol li:nth-child(4),
+    .recent ol li:nth-child(5),
+    .recent ol li:nth-child(6),
+    .recent ol li:nth-child(7) {
+        display: none;
+    }
+
+    .sub-btn {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-container {
+        width: 100%;
+        height: 20%;
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .menu-on-media {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .blog-menu,
+    .archive {
+        width: 50%
+    }
+
+    .recent,
+    .subscribing {
+        width: 100%;
+        order: 3;
+    }
+
+    .search {
+        margin: auto;
+        margin-right: -60px;
+    }
+
+    .blog-container {
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .blog-article .btn {
+        margin-left: 22px;
+    }
+
+    .mostra-altro {
+        display: block;
+        color: inherit;
+        text-align: center;
+    }
+
+    .sub-image {
+        margin: 0;
+    }
+
+    .sub-btn {
+        height: 50px;
+        margin-top: 30px;
+    }
+
+}

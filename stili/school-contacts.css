@@ -1,0 +1,97 @@
+.s-contact-wrapper {
+    margin-bottom: 60px;
+}
+
+.s-contact-wrapper h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    font-family: "Doodle", "Poppins",
+        sans-serif;
+}
+
+.s-contacts .form h4 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-family: "Doodle", "Poppins",
+        sans-serif;
+}
+
+.s-contacts {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+}
+
+.s-contacts .contact-form {
+    width: 100%;
+    height: fit-content;
+}
+
+.s-contacts .form {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(218deg, rgba(255, 255, 255, 1) 0%, rgb(251, 247, 244) 47%, rgb(237, 224, 220) 100%);
+    border: 0.2px solid rgb(237, 224, 220);
+    height: fit-content;
+}
+
+.s-contact-images {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 330px;
+    height: 330px;
+
+}
+
+.sc-img1 {
+    background-image: url(../img/school-img/kids1.png);
+    position: absolute;
+    bottom: 0;
+    left: -130px;
+}
+
+.sc-img2 {
+    background-image: url(../img/school-img/kids2.png);
+    position: absolute;
+    bottom: 10px;
+    right: -100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .s-contact-wrapper {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .s-contacts {
+        width: 100%;
+    }
+
+    .s-contact-images {
+        width: 250px;
+        height: 250px;
+    }
+
+    .s-contacts .form {
+        width: 100%;
+    }
+
+    .sc-img1 {
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+    }
+
+    .sc-img2 {
+        position: absolute;
+        bottom: 10px;
+        right: -50px;
+
+
+    }
+}

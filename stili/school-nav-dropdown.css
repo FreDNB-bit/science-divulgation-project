@@ -1,0 +1,9 @@
+.school-nav .dropdown-menu {
+    background: linear-gradient(0deg, #f35c3e 0%, #E77763 50%, #e2968df8 100%);
+}
+
+@media screen and (max-width: 980px) {
+    .school-nav .dropdown-menu {
+        background: transparent;
+    }
+}

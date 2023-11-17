@@ -1,0 +1,370 @@
+.wheel-wrapper {
+    height: 100vh;
+    margin: 110px auto;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.wheel h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    font-family: "Doodle", "Poppins",
+        sans-serif;
+}
+
+.s-c {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #fff;
+    transition: transform .5s ease;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: auto;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.s-c:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #2cff29 0%, #ff6f0f 100%);
+    transform: translate3d(0px, 3px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.s-c::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.s-c:hover {
+    transform: scale(1.05);
+    opacity: 0.97;
+    color: black;
+    cursor: pointer;
+}
+
+.s-boxa1 {
+    width: 820px;
+    height: 820px;
+    border: 3px solid #193f34db;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 12%;
+}
+
+.s-boxa2 {
+    width: 220px;
+    height: auto;
+    position: absolute;
+    top: 93%;
+    left: -5%;
+}
+
+.s-boxa3 {
+    width: 220px;
+    height: auto;
+    text-align: right;
+    position: absolute;
+    top: 93%;
+    right: -20%;
+}
+
+.s-boxa2 a p,
+.s-boxa3 a p {
+    font-size: 0.8rem;
+    line-height: 5px;
+}
+
+.s-boxa2 a:hover p,
+.s-boxa3 a:hover p {
+    color: black;
+    text-decoration: underline;
+}
+
+.s-box1 {
+    color: white;
+    background-image: url(../img/school-img/planets.jpg);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+}
+
+.s-box1:hover,
+.s-box3:hover,
+.s-box8:hover {
+    color: white;
+}
+
+
+.s-box2 {
+    background-image: url(../img/school-img/clouds.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+
+.s-box3 {
+    color: white;
+    background-image: url(../img/school-img/chemistry.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 30%;
+}
+
+.s-box4 {
+    background-image: url(../img/school-img/coding-kids.png);
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+}
+
+.s-box5 {
+    background-image: url(../img/school-img/plant-day.jpg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 75%;
+}
+
+.s-box6 {
+    background-image: url(../img/school-img/bee.jpg);
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: absolute;
+    top: 52%;
+    left: 92%;
+}
+
+.s-box7 {
+    background-image: url(../img/school-img/technology.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 73%;
+    left: 63%;
+}
+
+.s-box8 {
+    color: white;
+    background-image: url(../img/school-img/anatomy.png);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: -3%;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1224px) {
+    .s-boxa1 {
+        width: 700px;
+        height: 700px;
+    }
+
+    .s-box1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .s-box7 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .s-box3,
+    .s-box8 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .s-box2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .s-box4,
+    .s-box6 {
+        width: 180px;
+        height: 180px;
+    }
+
+}
+
+@media screen and (max-width: 1224px) and (min-width: 1060px) {
+    .s-boxa1 {
+        width: 600px;
+        height: 600px;
+    }
+
+    .s-box1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .s-box7 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .s-box2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .s-box3,
+    .s-box8 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .s-box4,
+    .s-box6 {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 1060px) and (min-width: 980px) {
+    .s-boxa2 {
+        left: -10%;
+    }
+
+    .s-boxa1 {
+        width: 600px;
+        height: 600px;
+        top: 17%;
+    }
+
+    .s-box1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .s-box7 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .s-box3,
+    .s-box8 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .s-box4,
+    .s-box6 {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 980px) and (min-width: 768px) {
+
+    .s-boxa2 {
+        left: -12%;
+    }
+
+    .s-boxa1 {
+        width: 500px;
+        height: 500px;
+        top: 17%;
+    }
+
+    .s-box1 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .s-box7 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .s-box2,
+    .s-box3,
+    .s-box4,
+    .s-box5,
+    .s-box6,
+    .s-box8 {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .s-boxa2,
+    .s-boxa3 {
+        display: none;
+    }
+
+    .wheel-wrapper {
+        overflow: hidden;
+        margin: 20px auto;
+        padding-bottom: 60px;
+    }
+
+    .s-boxa1 {
+        width: 500px;
+        height: 500px;
+        top: 17%;
+        left: 1%;
+    }
+
+    .s-box1,
+    .s-box2,
+    .s-box3,
+    .s-box4,
+    .s-box5,
+    .s-box6,
+    .s-box7,
+    .s-box8 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .s-box3,
+    .s-box6 {
+        display: none;
+    }
+}

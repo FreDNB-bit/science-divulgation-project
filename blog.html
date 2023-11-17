@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA - Blog </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="stili/styles.css">
+    <link rel="stylesheet" href="stili/nav-dropdown.css">
+    <link rel="stylesheet" href="stili/nav.css">
+    <link rel="stylesheet" href="stili/header.css">
+    <link rel="stylesheet" href="stili/footer.css">
+    <link rel="stylesheet" href="stili/blog.css">
+    <link rel="stylesheet" href="stili/blog-search-btn.css">
+
+    <script src="https://kit.fontawesome.com/9a1ba26c19.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="check" name="check">
+            <label for="check" class="check-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="logo">
+                <span class="logo">
+                    <img src="img/logo.png" alt=" logo" width="80px">
+                </span>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Chi Siamo</a></li>
+                <li class="dropdown-container">
+                    <a href="index.html#project">Progetto
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="arrow-down">
+                            <path fill=""
+                                d="M4.707 5.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l4-4a1 1 0 10-1.414-1.414L8 8.586 4.707 5.293z"
+                                fill-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#magazine">Rivista</a></li>
+                        <li><a href="index.html#free-content">Contenuti Gratuiti</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="school.html">Per la Scuola</a></li>
+                <li><a href="index.html#contacts">Contatti</a></li>
+            </ul>
+        </nav>
+
+        <header class="h-container-full blog-header" id="home">
+            <div class="header-content">
+                <h1>blog</h1>
+                <div class="header-description">
+                    <p>Divulgazione Scientifica Popolare</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-full blog-wrapper">
+            <!--'MENU ASIDE' START-->
+            <aside class="menu-container">
+                <section class="search">
+                    <div id="search-wrapper">
+                        <form method="get" action="">
+                            <div class="tb">
+                                <div class="td">
+                                    <input type="text" placeholder="Cerca">
+                                </div>
+                                <div class="td" id="s-wrapper">
+                                    <button type="submit" id="s-btn">
+                                        <div id="s-circle"></div>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <div class="menu-on-media">
+                    <section class="blog-menu">
+                        <h4>Categorie</h4>
+                        <ol>
+                            <li><a href="#">Scienza</a></li>
+                            <li><a href="#">Matematica</a></li>
+                            <li><a href="#">Tecnologia</a></li>
+                            <li><a href="#">Astronomia</a></li>
+                            <li><a href="#">Sostenibilità</a></li>
+                            <li><a href="#">Natura</a></li>
+                        </ol>
+                    </section>
+
+                    <section class="recent">
+                        <h4>Articoli recenti</h4>
+                        <ol>
+                            <li><a href="#">Prevedere i terremoti dai gas sprigionati dalla terra.</a></li>
+                            <li><a href="#">Nuove dalla NASA: buchi neri.</a></li>
+                            <li><a href="#">Ucraina - La scienza del grano</a></li>
+                            <li><a href="#">L'Europa si sta scaldando più rapidamente rispetto al resto del pianeta</a>
+                            </li>
+                            <li><a href="#">L'intelligenza artificiale in medicina è sopravvalutata</a></li>
+                            <li><a href="#">Ecco perché la calotta glaciale della Groenlandia fonde così rapidamente</a>
+                            </li>
+                            <li><a href="#">Entra nell'archivio</a></li>
+                            <li><a href="#">Leggi altro</a></li>
+                        </ol>
+                    </section>
+
+                    <section class="archive">
+                        <h4>archivio</h4>
+                        <ol>
+                            <li><a href="#">Ottobre 2022</a></li>
+                            <li><a href="#">Settembre 2022</a></li>
+                            <li><a href="#">Agosto 2022</a></li>
+                            <li><a href="#">Luglio 2022</a></li>
+                            <li><a href="#">Giugno 2022</a></li>
+                            <li><a href="#">Maggio 2022</a></li>
+                            <li><a href="#">Entra nell'archivio</a></li>
+                        </ol>
+                    </section>
+                    <section class="subscribing">
+                        <h4>abbonamento</h4>
+                        <div>
+                            <button class="btn sub-btn">ABBONATI ALLA RIVISTA</button>
+                            <button class="btn sub-btn">ISCRIVITI ALLA NEWSLETTER</button>
+                        </div>
+                    </section>
+                </div>
+            </aside>
+            <!--'MENU ASIDE' CLOSING-->
+
+            <!--'BLOG CONTENT' START-->
+            <main class="blog-container">
+                <section class="description">
+                    <h3>Diffondiamo la conoscienza</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </section>
+
+                <section class="blog-articles">
+                    <div class="blog-article">
+                        <h4>Titolo Articolo</h4>
+                        <div class="blog-article-image b1"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda id qui, doloremque sint
+                            corrupti est deleniti nobis doloribus consequuntur officia, atque nam quaerat facilis ex
+                            molestias aperiam aspernatur culpa veritatis!</p>
+
+                        <button class="btn">
+                            <a href="#">Continua a leggere...</a>
+                        </button>
+
+                        <div class="blog-box">
+                            <img src="img/icons/icon-calendar.png" alt="phone-icon">
+                            <p>27 ottobre 2022</p>
+                        </div>
+                        <div class="blog-box">
+                            <img src="img/icons/icon-writing.png" alt="phone-icon">
+                            <p>Nome e Cognome</p>
+                        </div>
+                    </div>
+                    <div class="blog-article">
+                        <h4>Titolo Articolo</h4>
+                        <div class="blog-article-image b3"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda id qui, doloremque sint
+                            corrupti est deleniti
+                            nobis doloribus consequuntur officia, atque nam quaerat facilis ex molestias aperiam
+                            aspernatur culpa veritatis!</p>
+
+                        <button class="btn">
+                            <a href="#">Continua a leggere...</a>
+                        </button>
+
+                        <div class="blog-box">
+                            <img src="img/icons/icon-calendar.png" alt="phone-icon">
+                            <p>30 settembre 2022</p>
+                        </div>
+                        <div class="blog-box">
+                            <img src="img/icons/icon-writing.png" alt="phone-icon">
+                            <p>Nome e Cognome</p>
+                        </div>
+                    </div>
+                    <div class="blog-article">
+                        <h4>Titolo Articolo</h4>
+                        <div class="blog-article-image b5"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda id qui, doloremque sint
+                            corrupti est deleniti
+                            nobis doloribus consequuntur officia, atque nam quaerat facilis ex molestias aperiam
+                            aspernatur culpa veritatis!</p>
+
+                        <button class="btn">
+                            <a href="#">Continua a leggere...</a>
+                        </button>
+
+                        <div class="blog-box">
+                            <img src="img/icons/icon-calendar.png" alt="phone-icon">
+                            <p>16 settembre 2022</p>
+                        </div>
+                        <div class="blog-box">
+                            <img src="img/icons/icon-writing.png" alt="phone-icon">
+                            <p>Nome e Cognome</p>
+                        </div>
+                    </div>
+                    <div class="blog-article">
+                        <h4>Titolo Articolo</h4>
+                        <div class="blog-article-image b6"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda id qui, doloremque sint
+                            corrupti est deleniti
+                            nobis doloribus consequuntur officia, atque nam quaerat facilis ex molestias aperiam
+                            aspernatur culpa veritatis!</p>
+
+                        <button class="btn">
+                            <a href="#">Continua a leggere...</a>
+                        </button>
+
+                        <div class="blog-box">
+                            <img src="img/icons/icon-calendar.png" alt="phone-icon">
+                            <p>02 settembre 2022</p>
+                        </div>
+                        <div class="blog-box">
+                            <img src="img/icons/icon-writing.png" alt="phone-icon">
+                            <p>Nome e Cognome</p>
+                        </div>
+                    </div>
+                    <div class="mostra-altro">
+                        <button class="btn">
+                            <a href="#">MOSTRA ALTRO</a>
+                        </button>
+                    </div>
+                </section>
+
+            </main>
+            <!--'BLOG CONTENT' CLOSING-->
+        </div>
+
+        <!--'FOOTER' START-->
+        <footer class="container-full footer" id="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <label for="logo">
+                        <span>
+                            <img src="img/logo.png" alt="logo" width="180px">
+                        </span>
+                    </label>
+                </div>
+                <div class="quicklinks">
+                    <h5>Link veloci</h5>
+                    <ol class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">Chi Siamo</a></li>
+                        <li><a href="index.html#project">Progetto</a></li>
+                        <li><a href="index.html#magazine">Rivista</a></li>
+                        <li><a href="index.html#free-content">Contenuti Gratuiti</a></li>
+                        <li><a href="blog.index">Blog</a></li>
+                        <li><a href="index.html#contacts">Contatti</li>
+                    </ol>
+                </div>
+
+                <div class="followus">
+                    <h5>Seguici sui social</h5>
+                    <ol class="footer-list">
+                        <li><a href="https://www.facebook.com/" target="_blank">
+                                <div class="social-icon i1"></div>
+                            </a></li>
+                        <li><a href="https://twitter.com/" target="_blank">
+                                <div class="social-icon i2"></div>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank">
+                                <div class="social-icon i3"></div>
+                            </a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">
+                                <div class="social-icon i4"></div>
+                            </a></li>
+                        <li><a href="https://www.tiktok.com/" target="_blank">
+                                <div class="social-icon i5"></div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="subscribe">
+                    <h5>Abbonamento</h5>
+                    <button class="btn footer-btn">abbonati</button>
+                    <ol class="footer-list">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li>P.IVA: 86334519757</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="createdby">
+                <p>creato da Francesca Martini</p>
+            </div>
+        </footer>
+        <!--'FOOTER' CLOSING-->
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+.a-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 120px;
+    margin-top: 60px;
+    padding-bottom: 100px;
+}
+
+.a-card {
+    width: 450px;
+    height: auto;
+    position: relative;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(218deg, rgba(255, 255, 255, 1) 0%, rgba(244, 251, 251, 1) 47%, rgba(220, 237, 237, 1) 100%);
+    border: 0.2px solid rgb(220, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px 20px 60px 15px;
+    transition: transform .5s ease;
+    padding: 0 30px 30px 30px;
+}
+
+.a-card:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-145deg, #508a93 -35%, #8de1ed 57%);
+    transform: translate3d(-6px, 1px, 60) scale(1.06);
+    filter: blur(30px);
+    opacity: var(0.9);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.a-card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.a-card:nth-child(2) {
+    margin-top: 0px;
+}
+
+.a-card:hover {
+    transform: scale(1.05);
+}
+
+.a-card-image {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    margin: 40px 10px 30px 10px;
+}
+
+.a-card-content h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.a-card:nth-child(1) .a-card-image {
+    background-image: url(../img/foto-lei.jpg);
+}
+
+.a-card:nth-child(2) .a-card-image {
+    background-image: url(../img/foto-lui.jpg);
+}
+
+@media screen and (max-width: 1024px) {
+    .a-cards-container {
+        gap: 60px;
+        margin: 0;
+    }
+
+    .a-card {
+        width: 60%;
+    }
+
+    .a-card:nth-child(1) {
+        margin-top: 30px;
+    }
+
+    .a-card:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .a-card {
+        width: 80%;
+    }
+}

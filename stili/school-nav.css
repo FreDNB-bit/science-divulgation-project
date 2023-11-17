@@ -1,0 +1,30 @@
+.s-wrap nav {
+    background: linear-gradient(0deg, #e59f97f8 0%, #E77763 60%, #ea5335 100%);
+}
+
+.s-wrap .logo {
+    margin-left: 40px;
+}
+
+.s-wrap nav ul li a {
+    color: #193F34;
+}
+
+.s-wrap nav a:hover {
+    color: #F4934A;
+    background: #193F34;
+}
+
+.s-wrap .check-btn {
+    color: #193F34;
+}
+
+@media screen and (max-width: 980px) {
+    .s-wrap ul {
+        background: linear-gradient(0deg, #E94E2E 0%, #E77763 70%, #e59f97f8 100%);
+    }
+
+    .s-wrap nav a:hover {
+        background: #193F34;
+    }
+}

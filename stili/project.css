@@ -1,0 +1,69 @@
+.background-wrapper {
+    background-image: url(../img/dna-helix.png);
+    background-repeat: no-repeat;
+    background-position: 0 -250px;
+    background-size: 2000px 4000px;
+    box-shadow: -1px 1px 5px -1px #357197;
+    padding-bottom: 60px;
+}
+
+.p-cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.p-card {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-card-image {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.p-card-content h3 {
+    text-transform: uppercase;
+}
+
+.p-card:nth-child(1) .p-card-image {
+    background-image: url(../img/icons/icon-vision.png);
+}
+
+.p-card:nth-child(2) .p-card-image {
+    background-image: url(../img/icons/icon-mission.png);
+}
+
+@media screen and (max-width: 1024px) {
+    .p-card {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .p-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .p-card-image {
+        display: none;
+    }
+}
